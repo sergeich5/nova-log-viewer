@@ -56,8 +56,8 @@ class LogsViewer
     private function parseLog(string $line): array
     {
         return [
-            'level' => explode(':', explode('.', $line)[1])[0],
-            'message' => trim(explode(':', explode('.', $line)[1], 2)[1]),
+            'level' => explode(':', explode('.', $line, 2)[1], 2)[0],
+            'message' => trim(explode(':', explode('.', $line,2)[1], 2)[1]),
             'date' => substr($line, 1, 10),
             'stacktrace' => []
         ];
