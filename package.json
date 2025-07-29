@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "@inertiajs/vue3": "^2.0.17",
+    "laravel-nova-devtool": "file:vendor/laravel/nova-devtool",
+    "sass-loader": "^16.0.5",
+    "sass": "^1.89.2"
+  }
+}

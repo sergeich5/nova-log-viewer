@@ -1,0 +1,40 @@
+{
+    "name": "sergeich5/nova-log-viewer",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/nova": "^4.0|^5.0",
+        "laravel/nova-devtool": "^1.7"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://laravelsatis.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sergeich5\\NovaLogViewer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sergeich5\\NovaLogViewer\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
